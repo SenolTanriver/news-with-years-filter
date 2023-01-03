@@ -1,0 +1,59 @@
+﻿@import "../../Base/Global.scss";
+@import "../../Base/Colour.scss";
+
+/* Common xs1, xs2 */
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+  .section-01 {
+    .conteiner {
+      padding: 60px;
+      .head {
+        h1 {
+          font-size: 50px;
+          padding-top: 190px;
+          padding-left: 50px;
+          color: white;
+        }
+        background-image: url(/Content/images/gazete.jpg);
+        width: 1400;
+        height: 300;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .c-item-1 {
+        margin-top: 30px;
+        font-size: 30px;
+        a {
+          color: black;
+          margin-right: 16px;
+          opacity: 0.4;
+        }
+        a:hover {
+          transition: 0.5s;
+          color: black;
+          opacity: 1;
+        }
+      }
+
+      .c-item-2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 200px;
+        .card {
+          margin-top: 24px;
+          margin-right: 8px;
+          width: 300px;
+          padding: 5px;
+          border: solid 1px black;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
